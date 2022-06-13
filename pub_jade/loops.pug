@@ -1,0 +1,20 @@
+doctype html 
+html 
+    head 
+
+    body 
+        h1 For/Each Loops 
+        - const names = ["Dom", "Joel", "Brian"]
+        each n, i in names
+            p= n + " - " + i
+
+        - const cenas = {"cena1": 234, "cena2": 142}
+        each n, i in cenas 
+            p= n + " - " + i
+
+        - const nada = {}
+        for n, i in nada 
+            p= n + " - " + i
+        else 
+            p
+                strong nao tem nada

@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head 
+        title Case statement in pug 
+    body 
+        // comentario 
+        - const orderStatus = 'Pending'
+        
+        case orderStatus
+            when 'Pending'
+                p Your order has been placed and will be sent shortly.
+            when 'In_Transit'
+                p Your order is on the move - you should breceive it soon! 
+            when 'Completed'
+                p Your order has been completed.
+            default 
+                p Error

@@ -1,0 +1,38 @@
+doctype html
+html 
+    head
+        title pagina de teste
+        link(rel="stylesheet" href="./style.css")
+        style. 
+            p {
+                color: red;
+                text-decoration: underline;
+            }
+
+    body
+        h1#h1-id Isto e um teste 
+        p.p-class testando o paragrafo 
+
+        ul 
+            li item duma lista
+            li item duma lista
+            li item duma lista 
+            li item duma lista
+        
+        label(for="pass") Password
+        input(type="password" name="pass")
+
+        - const myclasses = ["class1","class2","class3"]
+
+        div.my-div(class=myclasses)
+
+        - const myStyles = {"color": "red", "padding": "5px"}
+
+        div.my-2div(style=myStyles)
+
+        - const myAttributes = {"src": "myphoto.png", "alt": "A minha foto"}
+
+        img&attributes(myAttributes)
+
+        input(type="text" disabled) 
+
